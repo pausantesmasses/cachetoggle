@@ -13,7 +13,17 @@ CacheToggle = {
     this.diskCache.events.addListener("change", this.boundUpdate, false);
   },
   
+  clearCache: function() {
+    var cacheClass = Components.classes["@mozilla.org/network/cache-service;1"];
+    var cacheService = cacheClass.getService(Components.interfaces.nsICacheService);
+    cacheService.evictEntries(Components.interfaces.nsICache.STORE_ON_DISK);
+    cacheService.evictEntries(Components.interfaces.nsICache.STORE_IN_MEMORY);
+  },
+  
   toggle: function(event) {
+    if (event.target.isOn == false) {
+      this.clearCache();
+    }
     this.memCache.value = this.diskCache.value = event.target.isOn;
     // Application.console.log('CacheToggle: browser cache is enabled: ' + this.memCache.value);
   },
