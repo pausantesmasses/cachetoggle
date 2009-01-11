@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<bindings xmlns="http://www.mozilla.org/xbl"
+  xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <binding id="switchBinding">
+    <content>
+      <xul:scale
+        value="0"
+        min="0"
+        max="10"
+        increment="1"
+        pageIncrement="10"
+        width="48" />
+    </content>
+    
+    <implementation>
+      <field name="isOn" />
+      <method name="setOn">
+        <parameter name="state"/>
+        <body>
+          this.isOn = state;
+          document.getAnonymousNodes(this)[0].value = state ? 10 : 0;
+        </body>
+      </method>
+    </implementation>
+    
+    <handlers>
+      <handler event="change" phase="capturing">
+        if (document.getAnonymousNodes(this)[0].value == 0 ) {
+          this.isOn = false;
+        }
+        else if (document.getAnonymousNodes(this)[0].value == 10) {
+          this.isOn = true;
+        }
+        else {
+          event.stopPropagation();
+        }
+      </handler>
+    </handlers>
+
+  </binding>
+</bindings>

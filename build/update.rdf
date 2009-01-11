@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:NS1="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="rdf:#$pW+OD1"
+                   NS1:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   NS1:minVersion="3"
+                   NS1:maxVersion="3.*"
+                   NS1:updateLink="http://pau.santesmasses.net/cachetoggle/releases/cachetoggle.0.1.xpi"
+                   NS1:updateHash="sha1:76f3f52d7e755554102f80478c852c4dbb618dec" />
+  <RDF:Seq RDF:about="rdf:#$lW+OD1">
+    <RDF:li RDF:resource="rdf:#$mW+OD1"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="urn:mozilla:extension:cachetoggle@pau.santesmasses.net"
+                   NS1:version="0.1"
+                   NS1:updateLink="http://pau.santesmasses.net/cachetoggle/releases/cachetoggle.0.1.xpi"
+                   NS1:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBANxgcF8hM79leb6AjTGCHGZcatIeqTUOgMrRvj0N5aIoz7Jd38AsD7R9e85ybZurhAOxl8SVjDgts5Im5x5POb37t+OEURnqFBbR7PxHpvVHc42TmvP1TR9TJi4asQiFodqezR2NqB5AbNl7RKRCsdljzt1ky9QBt3gXCtIYtrD/">
+    <NS1:updates RDF:resource="rdf:#$lW+OD1"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$mW+OD1"
+                   NS1:version="0.1">
+    <NS1:targetApplication RDF:resource="rdf:#$pW+OD1"/>
+  </RDF:Description>
+</RDF:RDF>

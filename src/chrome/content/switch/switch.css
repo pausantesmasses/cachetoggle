@@ -1,0 +1,24 @@
+box.switch {
+  -moz-binding: url('switch.xbl#switchBinding');
+  cursor: pointer;
+}
+
+box.switch .scale-slider {
+  -moz-appearance: none !important;
+  background: url('switch_background.png') repeat-y 50% 50%;
+  border: 1px solid #444;
+  -moz-border-radius: 3px;
+  height: 16px;
+}
+
+box.switch .scale-thumb {
+  -moz-appearance: none !important;
+  background-image: url(chrome://global/skin/statusbar-background.gif);
+  background-repeat: repeat-x;
+  border-top: none;
+  min-width: 20px !important;
+  border-bottom: none;
+  border-right: 1px solid #444 !important;
+  border-left: 1px solid #444 !important;
+  -moz-border-radius: 2px;
+}

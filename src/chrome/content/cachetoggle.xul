@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="cachetoggle.css" type="text/css"?>
+<?xml-stylesheet href="switch/switch.css" type="text/css"?>
+
+<!DOCTYPE overlay >
+<overlay id="CacheToggle-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script src="cachetoggle.js"/> 
+
+  <statusbar id="status-bar">
+    <statusbarpanel>
+      <label class="statusbarpanel-text">Cache</label>
+      <box class="switch" id="ctSwitch"/>
+    </statusbarpanel>
+  </statusbar>
+
+</overlay>
