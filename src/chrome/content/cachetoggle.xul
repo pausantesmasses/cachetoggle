@@ -9,10 +9,15 @@
   <script src="cachetoggle.js"/> 
 
   <statusbar id="status-bar">
-    <statusbarpanel>
-      <label class="statusbarpanel-text">Cache</label>
+    <statusbarpanel context="ctStatusContextMenu">
+      <label class="statusbarpanel-text" id="ctLabel">Cache</label>
       <box class="switch" id="ctSwitch"/>
     </statusbarpanel>
+    <menupopup id="ctStatusContextMenu" onpopupshowing="FirebugChrome.onOptionsShowing(this)">
+        <menuitem label="Text Label" id="ctToggleTextLabelMenuItem" type="checkbox"/>
+        <menuseparator/>
+        <menuitem label="Clear Cache when Off" id="ctClearCacheWhenOffMenuItem" type="checkbox"/>
+    </menupopup>
   </statusbar>
 
 </overlay>

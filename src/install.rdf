@@ -3,17 +3,15 @@
 <Description about = "urn:mozilla:install-manifest">
   <em:id>cachetoggle@pau.santesmasses.net</em:id>
   <em:name>CacheToggle</em:name>
-  <em:version>0.1</em:version>
+  <em:version>0.5</em:version>
   <em:description>Status bar toggle button for the browser cache</em:description>
   <em:creator>Pau Santesmasses</em:creator>
   <em:homepageURL>http://pau.santesmasses.net/cachetoggle</em:homepageURL>
-  <em:updateURL>http://pau.santesmasses.net/cachetoggle/releases/update.rdf</em:updateURL>
-  <em:updateKey>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDcIApHaKUGDevOVtabLUmaSycLqEBSUUJG9h19gJWphSsNrYOkxuHfcXmlcPLozI7EIoQJhnkOKCN4mcTVjB4X3KKz/WdGsX+2ZKfaGPCizyWX4kxJgBF2WLkchuDrszxV2FbW3Cp907tVTy7a6u0x5XIPbntUAUWSb5UuHg5jkwIDAQAB</em:updateKey>
   <em:targetApplication>
     <Description>
       <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-      <em:minVersion>3</em:minVersion>
-      <em:maxVersion>3.*</em:maxVersion>
+      <em:minVersion>3.0</em:minVersion>
+      <em:maxVersion>3.6a1pre</em:maxVersion>
     </Description>
   </em:targetApplication>
 </Description>

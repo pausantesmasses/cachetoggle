@@ -1,10 +1,10 @@
 require 'sha1'
 
 app_name = 'cachetoggle'
-version = '0.1'
+version = '0.5'
 uri = 'http://pau.santesmasses.net/cachetoggle/releases/'
 
-system("rm -rf ../build/* && cp -r ../src/* ../build/ && cd ../build && zip -rm #{app_name}.#{version}.xpi . && cd ..")
+system("rm -rf ../build/* && cp -r ../src/* ../build/ && cd ../build && zip -rm #{app_name}.#{version}.xpi .  -x '*.DS_Store' && cd ..")
 
 hash = Digest::SHA1.hexdigest(File.read("../build/#{app_name}.#{version}.xpi"))
 
@@ -22,8 +22,8 @@ update_rdf = <<XML
           <targetApplication>
             <r:Description>
               <id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</id>
-              <minVersion>3</minVersion>
-              <maxVersion>3.*</maxVersion>
+              <minVersion>3.0</minVersion>
+              <maxVersion>3.6a1pre</maxVersion>
               <updateLink>#{uri}#{app_name}.#{version}.xpi</updateLink>
               <updateHash>sha1:#{hash}</updateHash>
             </r:Description>
